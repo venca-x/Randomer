@@ -16,5 +16,17 @@ namespace VencaX.Randomer
             var rand = new Random();
             return rand.Next(101);
         }
+
+        /// <summary>
+        /// Random integers between from - to
+        /// </summary>
+        /// <param name="from"></param>
+        /// <param name="to"></param>
+        /// <returns></returns>
+        public int NumberFromTo(int from, int to)
+        {
+            var rand = new Random();
+            return rand.Next(from, to);
+        }
     }
 }
