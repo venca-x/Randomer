@@ -69,7 +69,7 @@ jobs:
           echo Version: $VERSION
           VERSION="${VERSION//v}"
           echo Clean Version: $VERSION
-          dotnet pack -v normal -c Release --include-symbols --include-source -p:PackageVersion=$VERSION -o nupkg $PROJECT_NAME/$PROJECT_NAME.csproj
+          dotnet pack -v normal -c Release -p:PackageVersion=$VERSION -o nupkg $PROJECT_NAME/$PROJECT_NAME.csproj
       - name: Push to GitHub Feed
         run: |
           for f in ./nupkg/*.nupkg
