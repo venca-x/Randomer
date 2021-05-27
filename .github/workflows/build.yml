@@ -1,10 +1,8 @@
 name: .NET Core
 on:
   push:
-  pull_request:
-  release:
-    types:
-      - published
+    tags:
+       - '*'
 env:
   PROJECT_NAME: VencaX.Randomer
   # GitHub Packages Feed settings
