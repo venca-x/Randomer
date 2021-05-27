@@ -37,24 +37,24 @@ jobs:
         with:
           name: nupkg
           path: ${{ env.PROJECT_NAME }}/bin/Release/*.nupkg
-  prerelease:
-    needs: build
-    if: github.ref == 'refs/heads/develop'
-    runs-on: ubuntu-latest
-    steps:
-      - name: Download Artifact
-        uses: actions/download-artifact@v1
-        with:
-          name: nupkg
-      - name: Push to GitHub Feed
-        run: |
-          for f in ./nupkg/*.nupkg
-          do
-            curl -vX PUT -u "$GITHUB_USER:$GITHUB_TOKEN" -F package=@$f $GITHUB_FEED
-          done
+#  prerelease:
+#    needs: build
+#    if: github.ref == 'refs/heads/develop'
+#    runs-on: ubuntu-latest
+#    steps:
+#      - name: Download Artifact
+#        uses: actions/download-artifact@v1
+#        with:
+#          name: nupkg
+#      - name: Push to GitHub Feed
+#        run: |
+#          for f in ./nupkg/*.nupkg
+#          do
+#            curl -vX PUT -u "$GITHUB_USER:$GITHUB_TOKEN" -F package=@$f $GITHUB_FEED
+#          done
   deploy:
     needs: build
-    if: github.event_name == 'release'
+#    if: github.event_name == 'release'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
