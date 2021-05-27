@@ -5,6 +5,8 @@ VisualStudioVersion = 16.0.31112.23
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VencaX.Randomer", "VencaX.Randomer\VencaX.Randomer.csproj", "{E19E5A78-1968-45B3-9686-B30F7238016E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VencaX.Randomer.Tests", "VencaX.Randomer.Tests\VencaX.Randomer.Tests.csproj", "{92365CDA-7F70-460F-A755-79C91B0E83FB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{E19E5A78-1968-45B3-9686-B30F7238016E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E19E5A78-1968-45B3-9686-B30F7238016E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E19E5A78-1968-45B3-9686-B30F7238016E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92365CDA-7F70-460F-A755-79C91B0E83FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92365CDA-7F70-460F-A755-79C91B0E83FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92365CDA-7F70-460F-A755-79C91B0E83FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92365CDA-7F70-460F-A755-79C91B0E83FB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
